@@ -6,22 +6,49 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  font-family: sans-serif
 }
 
-.quiz-box{
-    height: 100%;
+.top-bar{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+}
+
+.high-score-link{
+    padding: 10px;
+    text-align: left;
 }
 
 .option-container{
+    display: flex;
     margin: 10px;
-    padding: 5px;
-    width: 80vw;
-    height: 10vh;
-    background-color: #c7dddf;
-    font-size: x-large;
+    padding: 20px;
+    font-size: 20px;
     text-align: center;     
 }
+
+.timer {
+    padding: 10px;
+    text-align: right;
+}
+
+.quiz-container{
+    display: flex;
+    justify-content: center;
+}
+
+.question {
+
+}
+
+.option {
+
+}
+
+
+.score {
+
+}
+
+
+
