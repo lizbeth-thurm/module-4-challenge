@@ -32,6 +32,10 @@ body {
     margin: 40px;
 }
 
+.start-button {
+    margin: auto;
+}
+
 .question {
     display: flex;
     margin: auto;
@@ -58,11 +62,6 @@ body {
     margin-left: 0px;
     width: 200px;
     font-size: medium;
-}
-
-
-.score {
-
 }
 
 
