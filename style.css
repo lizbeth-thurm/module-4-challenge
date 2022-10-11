@@ -19,14 +19,6 @@ body {
     text-align: left;
 }
 
-.option-container{
-    display: flex;
-    margin: 10px;
-    padding: 20px;
-    font-size: 20px;
-    text-align: center;     
-}
-
 .timer {
     padding: 10px;
     text-align: right;
@@ -35,14 +27,34 @@ body {
 .quiz-container{
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    padding: 40px;
+    margin: 40px;
 }
 
 .question {
+    display: flex;
+    justify-content: start;
+    font-size: xx-large;
+    padding-left: 0px;
+    padding-bottom: 40px;
+}
 
+.option-container{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    font-size: x-large;    
 }
 
 .option {
-
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+    margin-left: 0px;
+    width: 200px;
+    font-size: medium;
 }
 
 
