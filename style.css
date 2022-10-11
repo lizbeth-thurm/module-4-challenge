@@ -34,6 +34,7 @@ body {
 
 .question {
     display: flex;
+    margin: auto;
     justify-content: start;
     font-size: xx-large;
     padding-left: 0px;
@@ -42,6 +43,7 @@ body {
 
 .option-container{
     display: flex;
+    margin: auto;
     justify-content: start;
     flex-direction: column;
     font-size: x-large;    
@@ -51,6 +53,7 @@ body {
     display: flex;
     justify-content: center;
     text-align: center;
+    background-color: aqua;
     margin: 10px;
     margin-left: 0px;
     width: 200px;
