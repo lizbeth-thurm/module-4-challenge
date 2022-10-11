@@ -13,6 +13,9 @@
 
 <body>
 
+    <!--The bar at the top of the screen - always allows user to switch to the high
+        scores screen with a link on the left and shows the current time on the right-->
+
     <div class ="top-bar">
 
         <div class ="high-score-link">View High Score</div>
@@ -21,7 +24,12 @@
 
     </div>
 
+    <!--Container for holding the actual quiz itself including questions and answer options.-->
+
     <div class ="quiz-container">
+
+        <!--Container for the start menu showing the button to start the game and an
+            introduction message.-->
 
         <div class="start-container" id="start-container">
 
@@ -35,6 +43,9 @@
             <button class="start-button" id="start-button" onclick="startFunction()">START</button>
 
         </div>
+
+        <!--Each question has its own container and set of options.  The 'next' button advances
+            to the next question and also logs the score-->
 
         <div class="question-container" id="question-container1">
 
@@ -165,8 +176,6 @@
             </div>
 
         </div>
-
-
 
 <script src="javascript.js"></script>
 
