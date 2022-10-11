@@ -23,56 +23,72 @@
 
     <div class ="quiz-container">
 
-        <h1>Coding Quiz</h1>
+        <div class="start-container" id="start-container">
+
+            <h1>Coding Quiz</h1>
     
-        <h2>Try to answer all the questions within the time limit.  You will have
+            <h2>Try to answer all the questions within the time limit.  You will have
             70 seconds to answer 5 questions.  If you miss a question, 5 seconds will
             be deducted from your time.  Good luck!
-        </h2>
+            </h2>
 
-        <button class="start-button" onclick="startFunction()">START</button>
-
-        <div class="question" id="question">Here is the question!</div>
-
-        <div class="option-container">
-
-            <button class="option" onclick="" id="optionA">optionA</button>
-      
-            <button class="option" id="optionB">optionB</button>
-      
-            <button class="option" id="optionC">optionC</button>
-      
-            <button class="option" id="optionD">optionD</button>
+            <button class="start-button" id="start-button" onclick="startFunction()">START</button>
 
         </div>
 
-        <div class="finish-screen">
+        <div class="question-container" id="question-container">
 
-            <h2>Finished!</h2>
+            <div class="question" id="question">Here is the question!</div>
 
-            <h3>Your final score is _____</h3>
+            <div class="option-container">
 
-            <input type="text" id="initials-entry" value="Enter initials here">
+                <button class="option" onclick="" id="optionA">optionA</button>
+      
+                <button class="option" id="optionB">optionB</button>
+      
+                <button class="option" id="optionC">optionC</button>
+      
+                <button class="option" id="optionD">optionD</button>
 
-            <button class="option" onclick="" id="submit-score-button">Submit</button>
+                <button class="option" id="next-button" onclick="nextFunction()">NEXT</button>
 
-        </div>
-
-        <div class="score-screen">
-
-            <h2>High Scores</h2>
-
-            <button class="option" onclick="" id="return-button">Go Back</button>
-
-            <button class="option" onclick="" id="clear-score-button">Clear Scores</button>
+            </div>
 
         </div>
 
-    </div>
+        <div class="finish-container" id="finish-container">
+
+            <div class="finish-screen">
+
+                <h2>Finished!</h2>
+
+                <h3>Your final score is _____</h3>
+
+                <input type="text" id="initials-entry" value="Enter initials here">
+
+                <button class="option" onclick="" id="submit-score-button">Submit</button>
+
+            </div>
+
+        </div>
+
+        <div class="score-container" id="score-container">
+
+            <div class="score-screen">
+
+                <h2>High Scores</h2>
+
+                <button class="option" onclick="" id="return-button">Go Back</button>
+
+                <button class="option" onclick="" id="clear-score-button">Clear Scores</button>
+
+            </div>
+
+        </div>
 
 
 
-<script src="script.js"></script>
+<script src="javascript.js"></script>
 
 </body>
 

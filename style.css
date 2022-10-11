@@ -32,7 +32,16 @@ body {
     margin: 40px;
 }
 
+.start-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px;
+    margin: 40px;
+}
+
 .start-button {
+    display: flex;
     margin: auto;
 }
 
@@ -62,6 +71,11 @@ body {
     margin-left: 0px;
     width: 200px;
     font-size: medium;
+}
+
+.next-button {
+    display: flex;
+    margin: auto;
 }
 
 
