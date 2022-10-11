@@ -9,5 +9,6 @@ scoreScreen.style.display = "none";
 
 function startFunction() {
     startScreen.style.display = "none";
+    quizScreen.style.display = "block";
   }
 
