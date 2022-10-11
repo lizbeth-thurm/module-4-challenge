@@ -29,7 +29,14 @@ body {
     justify-content: center;
     flex-direction: column;
     padding: 40px;
-    margin: 40px;
+    margin: auto;
+}
+
+.start-button{
+    display: flex;
+    text-align: center;
+    margin: auto;
+    font-size: medium;
 }
 
 .question {
@@ -60,8 +67,11 @@ body {
     font-size: medium;
 }
 
+.finish-screen {
+    
+}
 
-.score {
+.score-screen {
 
 }
 
