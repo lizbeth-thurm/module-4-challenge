@@ -78,5 +78,22 @@ body {
     margin: auto;
 }
 
+.score-screen {
+    display: flex;
+    flex-direction: column;
+}
+
+.high-scores {
+    padding: 10px;
+}
+
+.initials-list {
+    padding: 10px;
+}
+
+.score-list {
+    display: flex;
+    justify-content: start;
+}
 
 

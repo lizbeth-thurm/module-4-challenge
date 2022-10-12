@@ -38,6 +38,11 @@ var correctAnswer;
 var wrongAnswer;
 var playerScore;
 
+// Variable for storing high scores.
+
+var highScores = [];
+var initials = [];
+
 // Functions to check if answer was right or wrong, increment score, and display result.
 
 function correctFunction1(){
@@ -125,8 +130,6 @@ function wrongFunction5(){
     document.getElementById("right-or-wrong5").innerHTML = "Wrong!";
 }
 
-
-
 // Function to start quiz, start timer, and switch to first question screen.
 
 function startFunction() {
@@ -135,6 +138,7 @@ function startFunction() {
     document.getElementById("right-or-wrong1").innerHTML = "SELECT ANSWER";
     startScreen.style.display = "none";
     quizScreen1.style.display = "block";
+    optionBox1.style.display = "block";
   }
 
 // Function to advance to next question and log score.
@@ -144,6 +148,7 @@ function nextFunction1() {
     document.getElementById("right-or-wrong2").innerHTML = "SELECT ANSWER";
     quizScreen1.style.display = "none";
     quizScreen2.style.display = "block";
+    optionBox2.style.display = "block";
 }
 
 function nextFunction2() {
@@ -151,6 +156,7 @@ function nextFunction2() {
     document.getElementById("right-or-wrong3").innerHTML = "SELECT ANSWER";
     quizScreen2.style.display = "none";
     quizScreen3.style.display = "block";
+    optionBox3.style.display = "block";
 }
 
 function nextFunction3() {
@@ -158,6 +164,7 @@ function nextFunction3() {
     document.getElementById("right-or-wrong4").innerHTML = "SELECT ANSWER";
     quizScreen3.style.display = "none";
     quizScreen4.style.display = "block";
+    optionBox4.style.display = "block";
 }
 
 function nextFunction4() {
@@ -165,9 +172,11 @@ function nextFunction4() {
     document.getElementById("right-or-wrong5").innerHTML = "SELECT ANSWER";
     quizScreen4.style.display = "none";
     quizScreen5.style.display = "block";
+    optionBox5.style.display = "block";
 }
 
 function nextFunction5() {
+    
     document.getElementById("show-score").innerHTML = playerScore;
     quizScreen5.style.display = "none";
     finishScreen.style.display = "block";
@@ -176,6 +185,17 @@ function nextFunction5() {
 function nextFunction6() {
     finishScreen.style.display = "none";
     scoreScreen.style.display = "block";
+
+    highScores.push(playerScore)
+    initials.push(document.getElementById("initials-entry").value);
+
+    console.log(highScores[0]);
+    console.log(initials[0]);
+
+    for (let i = 0; i < highScores.length; i++){
+        document.getElementById("high-scores").innerHTML = highScores[i];
+        document.getElementById("initials-list").innerHTML = initials[i];
+    }
 }
 
 function nextFunction7() {
