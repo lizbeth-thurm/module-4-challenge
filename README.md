@@ -19,9 +19,9 @@ score list and clear it.
 
 ## Links
 
-<a href="">Link to Deployed Page</a>
+<a href="https://skip-thurm.github.io/module-4-challenge/">Link to Deployed Page</a>
 
-<a href="">Link to Github Page with Code</a>
+<a href="https://github.com/skip-thurm/module-4-challenge">Link to Github Page with Code</a>
 
 ## Author
 
