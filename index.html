@@ -53,17 +53,19 @@
 
             <div class="option-container" id="option-container1">
 
-                <button class="option" onclick="correctFunction()" id="option1A">Flexbox</button> <!--Correct-->
+                <button class="option" onclick="correctFunction1()" id="option1A">Flexbox</button> <!--Correct-->
       
-                <button class="option" onclick="wrongFunction()"  id="option1B">Wireframe</button>
+                <button class="option" onclick="wrongFunction1()"  id="option1B">Wireframe</button>
       
-                <button class="option" onclick="wrongFunction()"  id="option1C">jQuery</button>
+                <button class="option" onclick="wrongFunction1()"  id="option1C">jQuery</button>
       
-                <button class="option" onclick="wrongFunction()"  id="option1D">HTML</button>
-
-                <button class="option" id="next-button" onclick="nextFunction1()">NEXT</button>
+                <button class="option" onclick="wrongFunction1()"  id="option1D">HTML</button>
 
             </div>
+
+            <button class="option" id="next-button" onclick="nextFunction1()">NEXT</button>
+
+            <h4 id="right-or-wrong1"></h4>
 
         </div>
         
@@ -73,17 +75,19 @@
 
             <div class="option-container" id="option-container2">
 
-                <button class="option" onclick="wrongFunction()"  id="option2A">Debugging</button>
+                <button class="option" onclick="wrongFunction2()"  id="option2A">Debugging</button>
       
-                <button class="option" onclick="wrongFunction()"  id="option2B">Incrementing</button>
+                <button class="option" onclick="wrongFunction2()"  id="option2B">Incrementing</button>
       
-                <button class="option" onclick="correctFunction()"  id="option2C">Hoisting</button> <!--Correct-->
+                <button class="option" onclick="correctFunction2()"  id="option2C">Hoisting</button> <!--Correct-->
       
-                <button class="option" onclick="wrongFunction()"  id="option2D">Looping</button>
-
-                <button class="option" id="next-button" onclick="nextFunction2()">NEXT</button>
+                <button class="option" onclick="wrongFunction2()"  id="option2D">Looping</button>
 
             </div>
+
+            <button class="option" id="next-button" onclick="nextFunction2()">NEXT</button>
+
+            <h4 id="right-or-wrong2"></h4>
 
         </div>
 
@@ -93,17 +97,19 @@
 
             <div class="option-container" id="option-container3">
 
-                <button class="option" onclick="wrongFunction()"  id="option3A">String</button>
+                <button class="option" onclick="wrongFunction3()"  id="option3A">String</button>
       
-                <button class="option" onclick="wrongFunction()"  id="option3B">Boolean</button>
+                <button class="option" onclick="wrongFunction3()"  id="option3B">Boolean</button>
       
-                <button class="option" onclick="correctFunction()" id="option3C">Char</button> <!--Correct-->
+                <button class="option" onclick="correctFunction3()" id="option3C">Char</button> <!--Correct-->
       
-                <button class="option" onclick="wrongFunction()"  id="option3D">Array</button>
-
-                <button class="option" id="next-button" onclick="nextFunction3()">NEXT</button>
+                <button class="option" onclick="wrongFunction3()"  id="option3D">Array</button>
 
             </div>
+
+            <button class="option" id="next-button" onclick="nextFunction3()">NEXT</button>
+
+            <h4 id="right-or-wrong3"></h4>
 
         </div>
 
@@ -113,17 +119,19 @@
 
             <div class="option-container" id="option-container4">
 
-                <button class="option" onclick="wrongFunction()" id="option4A">a > b</button>
+                <button class="option" onclick="wrongFunction4()" id="option4A">a > b</button>
       
-                <button class="option" onclick="correctFunction()" id="option4B">a == b</button> <!--Correct-->
+                <button class="option" onclick="correctFunction4()" id="option4B">a == b</button> <!--Correct-->
       
-                <button class="option" onclick="wrongFunction()"  id="option4C">a !== b</button>
+                <button class="option" onclick="wrongFunction4()"  id="option4C">a !== b</button>
       
-                <button class="option" onclick="wrongFunction()"  id="option4D">a >= b</button>
-
-                <button class="option" id="next-button" onclick="nextFunction4()">NEXT</button>
+                <button class="option" onclick="wrongFunction4()"  id="option4D">a >= b</button>
 
             </div>
+
+            <button class="option" id="next-button" onclick="nextFunction4()">NEXT</button>
+
+            <h4 id="right-or-wrong4"></h4>
 
         </div>
 
@@ -133,17 +141,19 @@
 
             <div class="option-container" id="option-container5">
 
-                <button class="option" onclick="wrongFunction()"  id="option5A">JavaScript</button>
+                <button class="option" onclick="wrongFunction5()"  id="option5A">JavaScript</button>
       
-                <button class="option" onclick="wrongFunction()"  id="option5B">CSS</button>
+                <button class="option" onclick="wrongFunction5()"  id="option5B">CSS</button>
       
-                <button class="option" onclick="wrongFunction()"  id="option5C">Haskell</button>
+                <button class="option" onclick="wrongFunction5()"  id="option5C">Haskell</button>
       
-                <button class="option" onclick="correctFunction()" id="option5D">HTML</button> <!--Correct-->
-
-                <button class="option" id="next-button" onclick="nextFunction5()">NEXT</button>
+                <button class="option" onclick="correctFunction5()" id="option5D">HTML</button> <!--Correct-->
 
             </div>
+
+            <button class="option" id="next-button" onclick="nextFunction5()">NEXT</button>
+
+            <h4 id="right-or-wrong5"></h4>
 
         </div>
 
@@ -153,7 +163,9 @@
 
                 <h2>Finished!</h2>
 
-                <h3>Your final score is _____</h3>
+                <h3>Your final score is:</h3>
+
+                <h2 id="show-score"></h2>
 
                 <input type="text" id="initials-entry" value="Enter initials here">
 
@@ -169,7 +181,7 @@
 
                 <h2>High Scores</h2>
 
-                <button class="option" onclick="" id="return-button">Go Back</button>
+                <button class="option" onclick="nextFunction7()" id="return-button">Go Back</button>
 
                 <button class="option" onclick="" id="clear-score-button">Clear Scores</button>
 
